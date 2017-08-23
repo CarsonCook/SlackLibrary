@@ -4,7 +4,7 @@ This is a collection of code meant to make using the Slack APIs easy. The librar
 
 The following documentation provides a high level understanding of the library and how to use it. For more specific documentation about each class, for example what each method parameter is exactly, go into the classes themselves. Javadoc style documentation has been written in each class.
 
-A list of the classes that need to be instantiated for each API call can be found in the [Delete](https://ddsb.visualstudio.com/AzureTemplates/_wiki?pagePath=%2FSlack%2FSlack-Library%2FDelete), [Get](https://ddsb.visualstudio.com/AzureTemplates/_wiki?pagePath=%2FSlack%2FSlack-Library%2FGet) and [Post](https://ddsb.visualstudio.com/AzureTemplates/_wiki?pagePath=%2FSlack%2FSlack-Library%2FPost) files.
+A list of the classes that need to be instantiated for each API call can be found in the [Delete](https://github.com/CarsonCook/SlackLibrary/blob/master/SlackLibrary/Delete/Delete.md), [Get](https://github.com/CarsonCook/SlackLibrary/blob/master/SlackLibrary/Get/Get.md) and [Post](https://github.com/CarsonCook/SlackLibrary/blob/master/SlackLibrary/Post/Post.md) files.
 
 ## Events API
 
@@ -97,7 +97,7 @@ Every real class requires the application token to be passed as a constructor pa
 
 ### Adding Classes
 
-Only approximately half of the available Slack API methods have been implemented in this library, many of which are very useful.
+Some of the Slack API methods have not yet been implemented in this library, many of which are very useful.
 
 To add a class that implements a Slack API method, you simply must inherit SlackApiGet/Post/Delete, implement the methods and follow the Slack documentation. GetApiUrl and GetFirstDataKey will be implemented, and if there are more parameters in the API method call than defined in the parent class, BuildRequest will be overridden. These methods are outlined below. All values are passed in via constructor, to be used in BuildRequest. Below is an example of a more complex class, for the API method [here](https://slack.com/api/reactions.list):
 ```
